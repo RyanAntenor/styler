@@ -1,0 +1,8 @@
+//Remove bootstrap border radius
+$border-radius-base:        0px ;
+$border-radius-large:       0px ;
+$border-radius-small:       0px ;
+//Import bootstrap-sass
+@import 'var';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'breakpoints';

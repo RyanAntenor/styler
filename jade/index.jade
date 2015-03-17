@@ -1,0 +1,193 @@
+extends layouts/bootstrap/startpage
+- var title = "Testing title"
+include mixins/mix
+include mixins/bs3
+
+block main 
+  header#header
+   +customnavbar-brand('Theme templates')
+    +listlink('#','Home')
+    +listlink('#','Link')
+    +listlink('#','Link')
+
+  main#main
+    .jumbotron
+     .container
+      h1 Welcome to Styler 2 templates
+      p.
+        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+    
+    .container
+      
+      .page-header
+       h2 Buttons
+      include blocks/buttons
+    
+    //- ***********************************
+    //- Tables
+    //- ***********************************
+    .container
+      .page-header
+       h2 Tables
+      .row
+       .col-md-6
+        include blocks/table
+       .col-md-6
+        include blocks/tablestriped
+
+      .row
+       .col-md-6
+        include blocks/tablebordered
+
+       .col-md-6
+        include blocks/tablecondensed
+
+    //- ***********************************
+    //- Thumbnails
+    //- ***********************************
+
+
+    .container
+      .page-header
+        h2 Thumbnails
+      .gallery
+        include blocks/thumbnails
+
+    //- ***********************************
+    //- Labels
+    //- ***********************************
+
+    .container
+      .page-header
+        h2  Labels
+      h1 h1
+        include blocks/labels
+      h2 h2
+        include blocks/labels
+      h3 h3
+        include blocks/labels
+      h4 h4
+        include blocks/labels
+      h5 h5
+        include blocks/labels
+      h6 h6
+        include blocks/labels
+    
+    //- ***********************************
+    //- Badges
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Badges
+      include blocks/badges
+    
+    //- ***********************************
+    //- Dropdown Menus
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Dropdown Menus
+      include blocks/dropdowns
+    
+    //- ***********************************
+    //- Navs
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Navs
+      include blocks/nav
+
+    //- ***********************************
+    //- Navbars
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Navbars
+      include blocks/navbar
+      include blocks/navbarinverse
+
+
+    //- ***********************************
+    //- Alerts
+    //- ***********************************
+
+    .container
+     .page-header
+      h2 Alerts
+      include blocks/alert
+    
+    //- ***********************************
+    //- Progress bar
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Progress bar
+      include blocks/progressbar
+    
+    //- ***********************************
+    //- List groups
+    //- ***********************************
+    
+
+    .container
+      .page-header
+        h2 List groups
+      .col-md-4
+        include blocks/listgroup
+      .col-md-4
+        include blocks/listgroupitem
+      .col-md-4
+        include blocks/listgroupheading
+
+    //- ***********************************
+    //- Panels
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Panels
+      include blocks/panels
+
+    //- ***********************************
+    //- Wells
+    //- ***********************************
+
+    .container
+      .page-header
+        h2 Wells
+      include blocks/wells
+
+
+    
+block footer
+  footer.footer
+      .container
+        p.text-muted Sticky footer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

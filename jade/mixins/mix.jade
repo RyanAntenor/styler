@@ -1,0 +1,71 @@
+
+//-***Link****
+mixin link(href, name)
+  //- attributes == {class: "btn"}
+  a(class!=attributes.class, href=href)= name
+
+
+//-***Link****
+mixin article(title)
+  .article
+    .article-wrapper
+      h1= title
+      if block
+        block
+      else
+        p No content provided
+
+
+//-***listlink****
+mixin listlink(href, name)
+  //- attributes == {class: "btn"}
+  li(class!=attributes.class)
+   a(href=href)= name
+
+
+//-**Customized bootstrap  - Navbar***
+mixin customnavbar-brand(brand)
+  nav
+   .container
+     .navbar-header
+      a(href='').navbar-brand=brand
+      button.btn.navbar-toggle(data-target='.navbar-collapse',data-toggle="collapse")
+       span.sr-only Toggle navigation
+       span.icon-bar
+       span.icon-bar
+       span.icon-bar
+     .navbar-collapse.collapse
+       ul.nav.navbar-nav
+        if block
+            block
+
+mixin customnavbar-logo(logo)
+  nav
+   .navbar-header
+    a(href='').navbar-brand 
+      img(src=brand)   
+    button.btn.navbar-toggle(data-target='.navbar-collapse',data-toggle="collapse")
+     span.sr-only Toggle navigation
+     span.icon-bar
+     span.icon-bar
+     span.icon-bar
+   .navbar-collapse.collapse
+     ul.nav.navbar-nav
+      if block
+          block
+
+
+mixin customnavbar
+  nav
+   .navbar-header
+    a(href='').navbar-brand 
+    button.btn.navbar-toggle(data-target='.navbar-collapse',data-toggle="collapse")
+     span.sr-only Toggle navigation
+     span.icon-bar
+     span.icon-bar
+     span.icon-bar
+   .navbar-collapse.collapse
+     ul.nav.navbar-nav
+      if block
+          block
+

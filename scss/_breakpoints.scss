@@ -1,0 +1,14 @@
+$screen-sm-min: 768px; /* Small devices (tablets, 768px and up) */
+$screen-md-min: 992px;  /* Medium devices (desktops, 992px and up) */
+$screen-lg-min: 1200px; /* Large devices (large desktops, 1200px and up) */
+
+
+@mixin breakpoint-screen-sm {
+    @media (min-width: $screen-sm-min) { @content; }
+}
+@mixin breakpoint-screen-md {
+    @media (min-width: $screen-md-min) { @content; }
+}
+@mixin breakpoint-screen-lg {
+    @media (min-width: $screen-lg-min) { @content; }
+}

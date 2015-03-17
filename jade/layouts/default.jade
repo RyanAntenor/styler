@@ -1,0 +1,11 @@
+//Theme variables
+include ../config/_var
+
+doctype html
+html(lang='#{lang}')
+    include ../inc/header
+    
+    body
+        block prepend header
+        block body
+        include ../inc/footer
