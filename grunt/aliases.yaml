@@ -1,0 +1,3 @@
+default:
+ - connect
+ - watch
