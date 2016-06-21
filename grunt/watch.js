@@ -5,7 +5,7 @@ module.exports = {
         livereload: true,
     },
     html:{
-        files:['./templates/*.html'],
+        files:['./app/*.html'],
     },
     sass:{
         files:['./scss/*.scss'],
@@ -13,7 +13,7 @@ module.exports = {
         options: {livereload:true},
     },
     js:{
-        files:['./js/*.js'],
+        files:['app/js/*.js'],
     },
     bower:{
         files:['bower.json'],

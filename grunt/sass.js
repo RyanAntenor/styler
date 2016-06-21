@@ -4,15 +4,17 @@ module.exports = {
     dist: {
         options:{
         //require: 'susy',
-        sourcemap: true,
-        style: 'compact',  //nested, compact, compressed, expanded.
-    },
-    files:[{
-            cwd:'./scss',
-            src:'*.scss',
-            dest:'./css',
-            expand: true,
-            ext: '.css'
-        }]
+            sourcemap: false,
+            style: 'nested',  //nested, compact, compressed, expanded.
+        },
+        files: [
+            {
+                expand: true,
+                cwd: 'app/scss',
+                src: ['*.scss'],
+                dest: 'app/css',
+                ext: '.css'
+            }
+        ]
     }
 };

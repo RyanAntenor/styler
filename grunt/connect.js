@@ -4,7 +4,7 @@ module.exports = {
     html: {
         options: {
             port: 9000,
-            base: '.',
+            base: 'app',
             livereload: true,
             hostname:'localhost',
             // hostname:'0.0.0.0' // network availability

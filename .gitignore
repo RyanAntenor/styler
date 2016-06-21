@@ -1,4 +1,6 @@
 node_modules
-bower_components
+app/plugins
 .sass-cache
 .gitignore
+.DS_Store
+css
