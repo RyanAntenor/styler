@@ -5,14 +5,15 @@ module.exports = {
         options: {
             pretty: true,
             data: {debug: false}
-        }
+        },
+
+        files:[{
+            cwd: "jade",
+            src:["*.jade"],
+            dest: "app",
+            expand: true,
+            ext: ".html"
+        }]
     },
 
-    files:[{
-        cwd: "./jade",
-        src:["*.jade"],
-        // dest: "templates",
-        // expand: true,
-        // ext: ".html"
-    }],
 };
